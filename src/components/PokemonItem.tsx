@@ -23,7 +23,12 @@ export function PokemonItem({ name, url }: PokemonListProps) {
     >
       <View>
         <Text className="font-600 text-gray-200 text-xs">{formatedId}</Text>
-        <Text className="font-600 text-white text-xl capitalize">{name}</Text>
+        <Text
+          testID={`name-${name}`}
+          className="font-600 text-white text-xl capitalize"
+        >
+          {name}
+        </Text>
       </View>
       <PokemonImage pokemonId={Number(pokemonId)} />
     </TouchableOpacity>

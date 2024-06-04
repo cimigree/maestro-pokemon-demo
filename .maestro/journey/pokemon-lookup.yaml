@@ -1,0 +1,18 @@
+appId: ${APP_ID}
+onFlowStart:
+  - runFlow: ../common/setup.yaml
+  - startRecording: recording-pokemon-lookup-journey
+onFlowComplete:
+  - stopRecording
+---
+# Check Region List
+- runFlow: ../subflow/region-list.yaml
+
+# Check Pokemons in a Region
+- runFlow: ../subflow/pokemons-in-region.yaml
+
+# Search for a Pokemon
+- runFlow: ../subflow/search-pokemon.yaml
+
+# Check Pokemon Details
+- runFlow: ../subflow/pokemon-details.yaml

@@ -22,7 +22,12 @@ export function Header({ name = "", showInput, handleShowInput }: Header) {
           {showInput ? (
             <Feather name="x" size={24} color="white" />
           ) : (
-            <Feather name="search" size={24} color="white" />
+            <Feather
+              name="search"
+              testID="search-icon"
+              size={24}
+              color="white"
+            />
           )}
         </TouchableOpacity>
       ) : (

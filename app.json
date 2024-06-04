@@ -11,7 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#000014"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -19,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#000014"
-      }
+      },
+      "package": "com.cimigreen.maestroexpopokedex"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5a429ab2-381f-4d39-ab14-870c23970597"
+      }
     }
   }
 }
